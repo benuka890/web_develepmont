@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            css grid
+        </title>
+        <style>
+            .grid-item1{
+                grid-area: header;
+            }
+            .grid-item2{
+                grid-area: menu;
+            }
+            .grid-item3{
+                grid-area: main;
+            }
+            .grid-item4{
+                grid-area: footer;
+            }
+            .grid-container{
+                display: grid;
+                grid-template-columns: auto auto auto auto auto;
+                grid-template-rows: auto auto auto;
+                grid-template-areas: 
+                'header header header header header'
+                'menu main main main main'
+                'menu footer footer footer footer';
+                padding: 10px;
+                background-color: blue;
+            }
+            .grid-container> div{
+                background-color: rgb(189, 4, 4);
+                text-align: center;
+                padding: 20px;
+                border: 5px solid green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="grid-item1"><img src="C:\Users\pc\Downloads\Pagani_Zonda_C12_'chassis_001'_Genf_2019_1Y7A5539.jpg" alt="error" height="100" width="200"><br><h1>cars</h1></div>
+            <div class="grid-item2"><h3>similer cars</h3><br>porsche 911<br>mclaren f1<br>Mercedes-AMG ONE<br></div>
+            <div class="grid-item3"><h2>price of the pagani</h2><br>Pagani Huayra: Starting at $3,400,000.<br>Pagani Huayra Roadster BC: Only 40 were produced and cost $3.4 million.<br>Pagani Zonda HP Barchetta: Sold for a record $17.5 million.</div>
+            <div class="grid-item4"><a href="https://www.smartprix.com/cars/pagani-brand">extra information</a><br><a href="https://www.pagani.com/">pagani</a></div>
+        </div>
+    </body>
+</html>
